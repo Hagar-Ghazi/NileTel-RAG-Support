@@ -38,7 +38,7 @@
 
 ## 🎬 Demo
 
-> **▶ [Watch full demo video](artifacts\GIF_Demo.gif)**  
+![Demo](artifacts/GIF_Demo.gif)  
 > *(Shows greeting routing, knowledge-base Q&A and automatic ticket escalation flow)*
 
 ---
