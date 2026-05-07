@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src=r "C:\Users\WellCome\Desktop\NileTel RAG Assistant\artifacts\NileTel RAG Image.png" alt="NileTel RAG"/>
+<img src="C:\Users\WellCome\Desktop\NileTel RAG Assistant\artifacts\NileTel RAG Image.png" alt="NileTel RAG"/>
 
 # 📡 NileTel RAG — Intelligent Customer Support System
 
