@@ -109,15 +109,15 @@ When a customer's issue requires human intervention (full outage, router failure
     │               HybridRetriever                  │
     │                                                │
     │   ┌─────────────────┐   ┌──────────────────┐   │
-    │   │  FAISS (semantic)│   │   BM25 (keyword) │   │
-    │   │  multilingual-e5 │   │   BM25Okapi      │   │
-    │   │  cosine sim ≥0.35│   │   token overlap  │   │
-    │   └────────┬─────────┘   └───────┬──────────┘   │
-    │            └──────────┬───────────┘              │
-    │                ┌──────▼───────┐                  │
-    │                │  RRF Fusion  │  k=60             │
-    │                │  top-K docs  │                  │
-    │                └──────────────┘                  │
+    │   │  FAISS (semantic)│   │   BM25 (keyword) │  │ 
+    │   │  multilingual-e5 │   │   BM25Okapi      │  │
+    │   │  cosine sim ≥0.35│   │   token overlap  │  │
+    │   └────────┬─────────┘   └───────┬──────────┘  │
+    │            └──────────┬───────────┘            │
+    │                ┌──────▼───────┐                │
+    │                │  RRF Fusion  │  k=60          │
+    │                │  top-K docs  │                │
+    │                └──────────────┘                │
     └───────────────────────┬────────────────────────┘
                             │
                     ┌───────▼───────┐
