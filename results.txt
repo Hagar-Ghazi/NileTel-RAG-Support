@@ -1,0 +1,68 @@
+
+============================================================
+Q      : ازيك
+Route  : greeting
+Action : NO
+Sources: none
+Answer :
+أهلاً بيك يا فندم! 😊 أنا مساعد NileTel. إزاي أقدر أساعدك النهارده؟
+
+============================================================
+Q      : مرحبا، ايه باقات الإنترنت؟
+Route  : chat
+Action : NO
+Sources: telecom_glossary.md, eid_back_to_school_offers_2026.md, faq_new_offer_details.md, prepaid_to_postpaid_migration.md, ntra_regulations_summary.md
+Answer :
+أهلاً بيك يا فندم! 😊
+
+يا فندم، بننزل عروض خاصة عشان نزود الـ activations في موسم العيد والمدارس. العروض الرئيسية هى:
+
+- Eid Family Bundle: 400 GB shared + unlimited calls لـ 4 lines بـ 2500 جنيه.
+- Back-to-School Student Pack: 200 GB + free router للطلاب (مع إثبات تسجيل).
+- Bonus: 3 months free upgrade to higher speed for new FTTH.
+
+لو عايز تعمل migration من prepaid، نقدر ننقل الرصيد لحد 200 جنيه.
+
+============================================================
+Q      : ابعتلي مهندس
+Route  : ticket
+Action : YES
+Sources: none
+Answer :
+تمام يا فندم، هبدأ في رفع التذكرة فوراً. فريق الدعم الفني هيتواصل معاك في أقرب وقت.
+
+============================================================
+Q      : مرحبا، انقطع النت عندي
+Route  : ticket
+Action : YES
+Sources: none
+Answer :
+أهلاً بيك يا فندم! 😊
+
+تمام يا فندم، هبدأ في رفع التذكرة فوراً. فريق الدعم الفني هيتواصل معاك في أقرب وقت.
+
+============================================================
+Q      : ايه الـ SLA وكمان ايه باقة 100 ميجا؟
+Route  : chat
+Action : NO
+Sources: telecom_glossary.md, eid_back_to_school_offers_2026.md, roaming_charges_guide.md, ramadan_postpaid_offers_2026.md, sla_vip_golden_customers.md, corporate_customer_handling.md, faq_new_offer_details.md, vip_retention_script.md, escalation_matrix.md, prepaid_to_postpaid_migration.md
+Answer :
+**1. بخصوص سؤالك عن 'ايه الـ SLA':**
+الـ SLA (Service Level Agreement) هو اتفاقية مستوى الخدمة بيننا وبين العملاء الـ VIP و Golden، وبيحدد مستويات الخدمة اللي هتكون متوفرة لهم.
+
+**2. بخصوص سؤالك عن 'ايه باقة 100 ميجا':**
+يا فندم، عايز تعرف تفاصيل باقة 100 ميجا؟
+
+لا، عايز أساعدك نفهم إنك عايز تتعرف على باقة 100 ميجا، بس عروضنا الحالية في رمضان 2026 هتكون ببعض الخصومات والخدمات اللي هتجذبك.
+
+عرض Ramadan Unlimited: 500 GB + unlimited calls بـ 3000 جنيه شهرياً.
+معاه 5G router مجاني.
+لو عايز تعمل migration من prepaid، نقدر ننقل الرصيد لحد 200 جنيه.
+
+============================================================
+Q      : ايه أحسن مطعم في القاهرة؟
+Route  : out_of_scope
+Action : NO
+Sources: none
+Answer :
+آسف يا فندم، مش هقدر أساعدك في الموضوع ده. أنا متخصص في خدمات NileTel فقط.

@@ -1,0 +1,250 @@
+[
+  {
+    "text": "5G Throttling Troubleshooting Guide\n\nدليل حل مشاكل الـ 5G Throttling\n\nيا فندم، لو العميل شاكي إن السرعة بطيئة على الـ 5G، نتبع الخطوات دي بالترتيب:\n\nأول حاجة نسأله: \"هل تجاوزت الـ monthly quota بتاعتك؟\" لأن بعد الـ Fair Usage Policy بيحصل throttling تلقائي.\nثانياً، نطلب منه يشيك الـ signal strength: لازم الـ RSRP يكون أفضل من -90 dBm والـ SINR أعلى من 10 dB.\nثالثاً: \"اعمل restart للجهاز، شغل Airplane mode لمدة 30 ثانية، وبعدين re-attach للـ 5G SA network\".",
+    "source": "5g_throttling_troubleshooting.md"
+  },
+  {
+    "text": "rt للجهاز، شغل Airplane mode لمدة 30 ثانية، وبعدين re-attach للـ 5G SA network\". في أوقات الذروة (من 8 لـ 11 مساءً) الـ congestion بيكون عالي جداً خاصة في المنصورة ومناطق الدلتا، فكتير من الشكاوى بتيجي في رمضان بسبب الفيديوهات والستريمينج.\n\nلو المشكلة مستمرة بعد 30 دقيقة من الـ troubleshooting:\n- لو العميل VIP → ارفع التذكرة كـ P1 فوراً.\n- اعمل escalate للـ NOC team ودوّن كل الخطوات اللي عملتها.\n\nنصيحة: قول للعميل \"معلش يا فندم، هنحلها إن شاء الله، بس لو السرعة لسه بطيئة ابعتلي screenshot من الـ speed test\".\n\nLast Updated: April 2026 | Department: Technical Support",
+    "source": "5g_throttling_troubleshooting.md"
+  },
+  {
+    "text": "Audit & Compliance Logging Requirements\n\nمتطلبات تسجيل التفاعلات للـ audit والامتثال\n\nيا فندم، كل تفاعل مع العميل لازم يتسجل كويس عشان الـ NTRA والـ internal audit.\n\nما يجب تسجيله:\n- Full customer statements and sentiment.\n- All troubleshooting steps taken.\n- Any promises or compensation offered.\n- Ticket category, priority, and resolution code.\n\nنصيحة: \"لو مش متأكد، دوّن أكتر من اللي محتاج\" – ده بيحميك وبيحمي الشركة.\n\nLast Updated: March 2026 | Compliance Department",
+    "source": "audit_and_compliance_logging.md"
+  },
+  {
+    "text": "Billing Dispute Handling Procedure\n\nإجراءات التعامل مع شكاوى الفواتير\n\nيا فندم، لما العميل يتصل ويقول إن في رسوم غلط في الفاتورة، لازم نتبع الإجراء ده خطوة بخطوة عشان نحل المشكلة بسرعة ونحافظ على ثقته.\n\nأولاً: اسمع كويس وقول \"فهمت شكواك يا فندم، هنفحص الفاتورة مع بعض دلوقتي\".\nثانياً: اطلب رقم الفاتورة والرسوم اللي هو شايفها غلط، وبعدين افتح الـ CRM وشيك على usage logs والـ roaming records.\n\nالأسباب الشائعة:\n- roaming charges أثناء السفر\n- auto-renewed data packages\n- double billing بسبب مشكلة في الـ system sync",
+    "source": "billing_dispute_procedure.md"
+  },
+  {
+    "text": "لسفر\n- auto-renewed data packages\n- double billing بسبب مشكلة في الـ system sync لو الشكوى صحيحة: اعمل credit note عبر الـ OSS/BSS خلال 48 ساعة.\nلو جزئي: ممكن تعمل goodwill credit بحد أقصى 20% بس بعد موافقة الـ supervisor.\n\nمهم جداً: دوّن كل كلمة قالها العميل والخطوات اللي عملتها في التذكرة عشان الـ audit.\nممنوع تماماً توعد العميل باسترداد كامل بدون Level 2 approval.\n\nLast Updated: January 2026 | Finance & Billing Department",
+    "source": "billing_dispute_procedure.md"
+  },
+  {
+    "text": "Common ONT Hardware Faults & Replacement\n\nالأعطال الشائعة في الـ ONT وإجراءات الاستبدال\n\nيا فندم، الـ ONT هو أهم جهاز في الـ FTTH، وكتير من المشاكل بتبدأ منه.\n\nأعطال شائعة:\n- Red light / no power → check power adapter or PoE.\n- No internet light → fiber issue or wrong configuration.\n- Frequent reboot → overheating or firmware outdated.\n- Slow WiFi from ONT → interference or old firmware.\n\nReplacement Process:\n1. Remote diagnostics via OSS.\n2. If hardware fault confirmed → create replacement work order.\n3. Field engineer swaps the ONT and re-provisions.",
+    "source": "common_ont_hardware_faults.md"
+  },
+  {
+    "text": "reate replacement work order.\n3. Field engineer swaps the ONT and re-provisions. نصيحة: \"يا فندم، لو الـ ONT فيه عطل، هنبعتلك واحد جديد مجاناً ونركبه في أسرع وقت.\"\n\nLast Updated: April 2026 | Technical Support",
+    "source": "common_ont_hardware_faults.md"
+  },
+  {
+    "text": "Contract Cancellation Process\n\nإجراءات إلغاء العقد\n\nيا فندم، لما العميل يطلب cancellation، لازم نتبع الإجراء ده عشان نقلل الـ churn ونحاول نعمل retention أولاً.\n\nالخطوات الكاملة:\n1. اسأل عن سبب الإلغاء (billing, speed, service quality, moving to another city, etc.).\n2. حاول retention offer: extra GB أو discount حسب الـ ARPU.\n3. لو مصر على الإلغاء: تحقق من outstanding balance في الـ BSS.\n4. أنشئ cancellation request وخد confirmation من العميل.\n5. Port-out process لو عايز ينقل الرقم (ياخد حتى 7 أيام).",
+    "source": "contract_cancellation_process.md"
+  },
+  {
+    "text": "onfirmation من العميل.\n5. Port-out process لو عايز ينقل الرقم (ياخد حتى 7 أيام). Important Notes:\n- Cancellation fee يطبق لو العقد لسه في الـ commitment period.\n- VIP customers: escalate to Retention team قبل أي إجراء.\n\nنصيحة للـ agent: \"يا فندم، خلينا نحاول نحل المشكلة اللي مخليك تلغي قبل ما نكمل الإجراءات.\"\n\nLast Updated: April 2026 | Department: Retention & Billing",
+    "source": "contract_cancellation_process.md"
+  },
+  {
+    "text": "Corporate Customer Handling Guide\n\nدليل التعامل مع العملاء الـ Corporate\n\nيا فندم، العملاء الـ Corporate (شركات ومؤسسات) ليهم معاملة مختلفة شوية عن العملاء العاديين لأن ARPU بتاعهم عالي وعدد الـ lines كتير.\n\nالنقاط المهمة:\n- دايماً اطلب الـ Corporate Account ID أو Company Contract Number في أول الاتصال.\n- معظم الشكاوى بتكون متعلقة بـ SD-WAN أو leased lines أو multiple FTTH connections.\n- الـ SLA بتاعهم أقوى: response time 10 دقايق و resolution time 2 ساعات لـ critical issues.\n- لو في outage، ارفع التذكرة كـ P1 فوراً وأبلغ الـ Key Account Manager.",
+    "source": "corporate_customer_handling.md"
+  },
+  {
+    "text": "issues.\n- لو في outage، ارفع التذكرة كـ P1 فوراً وأبلغ الـ Key Account Manager. الخطوات عند التعامل:\n1. تحقق من الـ OSS لو في impact على أكتر من موقع.\n2. قول للعميل: \"يا فندم، إحنا عارفين إن الخدمة دي مهمة لأعمالكم، وهنتابعها شخصياً.\"\n3. لو محتاج dispatch، أضف \"Corporate - High Priority\" في الـ work order.\n\nنصيحة: العملاء دول بيحبوا الـ professionalism، فاستخدم كلام واضح وأرسل summary email بعد كل تفاعل.\n\nLast Updated: April 2026 | Department: Enterprise Sales & Support",
+    "source": "corporate_customer_handling.md"
+  },
+  {
+    "text": "CRM & OSS Integration Guide for Agents\n\nدليل التكامل بين الـ CRM والـ OSS\n\nيا فندم، الـ CRM بيظهر بيانات العميل والـ OSS بيظهر الـ network status.\n\nكيف تستخدمهم مع بعض:\n- افتح الـ CRM أولاً → خد contract ID و usage history.\n- روح للـ OSS → شوف real-time signal, port status, و recent alarms.\n- لو عملت change في واحد، لازم يsync مع التاني (مثل provisioning أو credit note).\n\nCommon Error: Data not synced → refresh both systems or escalate to IT.\n\nLast Updated: April 2026 | IT Operations",
+    "source": "crm_oss_integration_guide.md"
+  },
+  {
+    "text": "Handling CSAT Survey After Ticket Closure\n\nالتعامل مع استطلاع رضا العملاء بعد إغلاق التذكرة\n\nيا فندم، بعد ما تقفل التذكرة، العميل بياخد CSAT survey.\n\nنصائح عشان تحسن الـ score:\n- قبل ما تقفل، قول: \"يا فندم، لو المشكلة اتحلت، لو سمحت قيم الخدمة عشان نتحسن.\"\n- لو العميل زعلان، اعمل follow-up call قبل ما يملى الاستطلاع.\n- Target: CSAT > 85% و FCR > 75%.\n\nLast Updated: March 2026 | Quality Assurance",
+    "source": "customer_satisfaction_survey_handling.md"
+  },
+  {
+    "text": "Data Privacy & Customer Information Policy\n\nسياسة خصوصية البيانات في NileTel\n\nيا فندم، خصوصية بيانات العملاء حاجة حساسة أوي وملتزمين بيها 100% حسب لوائح الـ NTRA.\n\nالقواعد المهمة:\n- ممنوع تماماً مشاركة رقم الموبايل أو contract details أو usage history مع أي حد خارج الـ ticketing system.\n- كل التفاعلات (مكالمات، شات، تذاكر) لازم تتسجل في الـ CRM لأغراض الـ compliance.\n- لو العميل طلب يعرف إيه البيانات اللي عندنا عنه، نرجعه للـ privacy portal في التطبيق.\n- في حال أي شك في data breach (حتى لو صغير)، escalate فوراً للـ InfoSec team خلال 15 دقيقة.",
+    "source": "data_privacy_policy.md"
+  },
+  {
+    "text": "شك في data breach (حتى لو صغير)، escalate فوراً للـ InfoSec team خلال 15 دقيقة. نصيحة للـ agents:\nلو العميل سأل عن بياناته، قول \"يا فندم، أقدر أساعدك في حاجات الخدمة بس، أما بالنسبة للبيانات الشخصية ارجوك ادخل على الـ app أو الموقع\".\n\nأي violation في الـ policy ده بيؤدي لعقوبات داخلية صارمة.\n\nLast Updated: January 2026 | Department: Legal & Compliance",
+    "source": "data_privacy_policy.md"
+  },
+  {
+    "text": "Eid & Back-to-School Offers 2026\n\nعروض العيد والعودة للمدارس 2026\n\nيا فندم، في موسم العيد والمدارس بننزل عروض خاصة عشان نزود الـ activations.\n\nالعروض الرئيسية:\n- Eid Family Bundle: 400 GB shared + unlimited calls لـ 4 lines بـ 2500 جنيه.\n- Back-to-School Student Pack: 200 GB + free router للطلاب (مع إثبات تسجيل).\n- Bonus: 3 months free upgrade to higher speed for new FTTH.\n\nEligibility: Good payment history + new or migrating customers.\n\nAgent Script:\n\"يا فندم، العرض ده مثالي للعائلة مع بداية المدارس، عايز نفعله ونركب الراوتر في يومين؟\"\n\nLast Updated: April 2026 | Marketing Department",
+    "source": "eid_back_to_school_offers_2026.md"
+  },
+  {
+    "text": "Customer Escalation Matrix\n\nمصفوفة التصعيد لشكاوى العملاء\n\nيا فندم، لو المشكلة معقدة أو العميل زعلان أوي، لازم نعرف نعمل escalate بالطريقة الصحيحة عشان نحافظ على الـ CSAT ونمنع الـ churn.\n\nLevel 1 – Support Agent:\n- حل المشكلة خلال 30 دقيقة كحد أقصى.\n- استخدم كل الـ troubleshooting steps المتاحة في الـ knowledge base.\n- لو قدرت تحلها، قفل التذكرة واطلب feedback.\n\nLevel 2 – Supervisor:\n- يتم التصعيد لو العميل قال \"هشتكي للـ NTRA\" أو \"هروح للشكاوى\".\n- أو لو المشكلة مستمرة أكتر من 30 دقيقة و الـ agent مش قادر يحلها.\n- الـ supervisor يقدر يعمل goodwill credit أو يعدل الـ priority لـ P2.",
+    "source": "escalation_matrix.md"
+  },
+  {
+    "text": "در يحلها.\n- الـ supervisor يقدر يعمل goodwill credit أو يعدل الـ priority لـ P2. Level 3 – Retention Team:\n- للعملاء VIP أو Golden (ARPU أعلى من 500 جنيه).\n- أو لو العميل threatened legal action أو ذكر اسم محامي.\n- الـ Retention team يقدر يقدم special offers أو compensation إضافي.\n\nLevel 4 – Technical Escalation (NOC / Field Team):\n- لو في network outage كبير أو مشكلة في الـ OSS/BSS.\n- ارفع التذكرة كـ P1 وأضف كل الـ logs والـ screenshots.\n\nنصيحة مهمة للـ agents:\nدايماً قول للعميل \"يا فندم، أنا هصعد المشكلة دلوقتي للـ supervisor عشان نحلها بسرعة أكبر\" وخلّي التذكرة فيها كل التفاصيل والـ customer sentiment (angry / calm / frustrated).",
+    "source": "escalation_matrix.md"
+  },
+  {
+    "text": "ّي التذكرة فيها كل التفاصيل والـ customer sentiment (angry / calm / frustrated). Last Updated: March 2026 | Department: Customer Experience | Version: 3.2",
+    "source": "escalation_matrix.md"
+  },
+  {
+    "text": "FAQ: 5G not connecting\n\nأسئلة شائعة - الـ 5G مش بيتصل\n\nسؤال: \"الـ 5G مش بيشتغل على موبايلي\"\n\nالخطوات:\n1. تأكد إن الجهاز يدعم 5G SA (مش NSA بس)\n2. اعمل restart + Airplane mode 30 ثانية\n3. روح Settings → Mobile Network → اختار 5G/4G auto\n4. شوف في الـ OSS لو في congestion في الـ cell site\n\nلو لسه مش بيتصل:\n\"يا فندم، هنعمل remote diagnostics ولو محتاج نرفع ticket\"\n\nLast Updated: March 2026",
+    "source": "faq_5g_not_connecting.md"
+  },
+  {
+    "text": "FAQ: Customer Wants to Escalate\n\nأسئلة شائعة - العميل عايز يصعد الشكوى\n\nسؤال: \"مش راضي، عايز أكلم supervisor\"\n\nالرد الموصى:\n\"تمام يا فندم، أنا هصعد التذكرة دلوقتي للـ supervisor.\nهيتصل بيك خلال 15 دقيقة بالكتير.\nرقم التذكرة دلوقتي هو #T-78452.\nلو عايز أي حاجة تانية قولي.\"\n\nدايماً ابعت confirmation message بعد التصعيد.\n\nLast Updated: April 2026",
+    "source": "faq_escalation.md"
+  },
+  {
+    "text": "FAQ: Why is my fiber internet slow?\n\nأسئلة شائعة - بطء السرعة في الـ FTTH\n\nسؤال شائع: \"ليه النت بطيء أوي بعد تفعيل الفايبر؟\"\n\nالرد الموصى به:\n\"يا فندم، في أسباب كتير ممكن تسبب بطء في الـ FTTH:\n1. WiFi interference من أجهزة تانية\n2. Old router مش مدعوم\n3. Quota exceeded → throttling\n4. Problem في الـ splitter port\n\nنعمل إيه دلوقتي؟\n- اعمل speed test مباشرة من الـ ONT (مش من الواي فاي)\n- لو السرعة كويسة من الـ ONT، المشكلة في الـ WiFi\n- لو لسه بطيئة، هنرفع ticket P2 ونبعت engineer\"\n\nLast Updated: April 2026",
+    "source": "faq_fiber_slow_speed.md"
+  },
+  {
+    "text": "FAQ: New Offer Details\n\nأسئلة شائعة - تفاصيل العروض الجديدة\n\nسؤال: \"إيه تفاصيل عرض رمضان؟\"\n\nالرد:\n\"يا فندم، عرض Ramadan Unlimited: 500 GB + unlimited calls بـ 3000 جنيه شهرياً.\nمعاه 5G router مجاني.\nلو عايز تعمل migration من prepaid، نقدر ننقل الرصيد لحد 200 جنيه.\nعايز أساعدك نفعل العرض دلوقتي؟\"\n\nLast Updated: March 2026",
+    "source": "faq_new_offer_details.md"
+  },
+  {
+    "text": "FAQ: Refund Request\n\nأسئلة شائعة - طلب استرداد فلوس\n\nسؤال: \"عايز أرجع فلوسي من الفاتورة\"\n\nالرد:\n\"يا فندم، فهمت طلبك. عشان نعمل refund لازم نعمل review للـ usage logs أولاً.\nهفتح ticket P3 دلوقتي وهتابع مع الـ billing team.\nلو الشكوى صحيحة، الـ credit note هيحصل خلال 48 ساعة.\nلو عايز تعرف الخطوات، هقولك التفاصيل.\"\n\nممنوع توعد باسترداد قبل الموافقة.\n\nLast Updated: April 2026",
+    "source": "faq_refund_request.md"
+  },
+  {
+    "text": "Fiber Activation Policy - NileTel 2026\n\nسياسة تفعيل الـ FTTH في 2026\n\nيا فندم، النهاردة هنتكلم عن سياسة تفعيل الفايبر. \nالـ installation fee دلوقتي 1500 جنيه مصري ويتم دفعه قبل ما نبدأ الـ provisioning خالص.\nالوقت المتوسط للتفعيل من 3 لـ 5 أيام عمل في المنصورة والدلتا والقاهرة، بس لو العميل VIP بنعمل priority provisioning خلال 48 ساعة بالكتير.",
+    "source": "fiber_activation_policy_2026.md"
+  },
+  {
+    "text": "لتا والقاهرة، بس لو العميل VIP بنعمل priority provisioning خلال 48 ساعة بالكتير. الخطوات كاملة:\n1. الـ agent يفتح الـ CRM ويأكد من الـ contract ID ويطلب الـ ONT serial number.\n2. يشيك في الـ OSS system على توافر الـ splitter port في العنوان.\n3. يعمل work order ويبعت الـ field engineer.\n4. المهندس يركب الـ ONT ويعمل test للـ signal (يجب أن يكون أحسن من -25 dBm).\n5. بعد التفعيل لازم نعمل speed test ونتأكد إن السرعة واصلة 80% على الأقل من الـ subscribed speed.\n\nالمشاكل الشائعة:\n- ONT not detected → غالباً fiber cut أو wrong splitter port.\n- Slow speed بعد التفعيل → لازم نطلب speed test مباشرة من الـ ONT.",
+    "source": "fiber_activation_policy_2026.md"
+  },
+  {
+    "text": "plitter port.\n- Slow speed بعد التفعيل → لازم نطلب speed test مباشرة من الـ ONT. نصيحة للـ agents: دايماً قول للعميل \"يا فندم، هنتابع معاك خطوة بخطوة ونبعتلك الـ ETA فوراً\". \nلو في تأخير، لازم نعمل update في التذكرة ونبلغ الـ supervisor.\n\nLast Updated: March 2026 | Department: Network Operations",
+    "source": "fiber_activation_policy_2026.md"
+  },
+  {
+    "text": "Field Engineer Dispatch Rules\n\nقواعد إرسال المهندس الميداني\n\nيا فندم، الـ field engineer يتم إرساله فقط بعد ما نفشل في كل خطوات الـ remote troubleshooting.\n\nالأولوية في الإرسال:\n1. VIP و Golden customers\n2. Corporate customers\n3. Residential customers عاديين\n\nالمعلومات المطلوبة في التذكرة قبل الـ dispatch:\n- العنوان الكامل + GPS coordinates\n- وصف الأعراض بالعربي المصري (مثلاً: \"النت بيقطع كل 10 دقايق\")\n- serial number للـ ONT\n- كل الخطوات اللي عملها الـ agent قبل كده",
+    "source": "field_engineer_dispatch.md"
+  },
+  {
+    "text": "كل 10 دقايق\")\n- serial number للـ ONT\n- كل الخطوات اللي عملها الـ agent قبل كده بعد ما المهندس يخلص الزيارة:\n- لازم يعمل update في التذكرة بـ resolution notes\n- ياخد customer feedback (CSAT)\n- لو المشكلة لسه موجودة، يعمل re-open للتذكرة ويرفعها P1\n\nنصيحة: قول للعميل \"يا فندم، المهندس هيوصل خلال ساعة ونص بالكتير، وهبعتلك الـ ETA على الواتساب\".\n\nLast Updated: February 2026 | Department: Field Operations",
+    "source": "field_engineer_dispatch.md"
+  },
+  {
+    "text": "Issuing Goodwill Credit Procedure (Supervisor Level)\n\nإجراءات إصدار goodwill credit (للـ supervisors بس)\n\nيا فندم، الـ goodwill credit بنستخدمه عشان نحافظ على العملاء المهمين أو في حال SLA breach.\n\nالقواعد:\n- Max 20% of monthly bill for regular customers.\n- Up to 50% for VIP / Golden customers.\n- Must have valid ticket (P1 or P2) with proper documentation.\n- Approval chain: Supervisor → Billing team → OSS credit note.",
+    "source": "issuing_goodwill_credit.md (Supervisor-only).md"
+  },
+  {
+    "text": "er documentation.\n- Approval chain: Supervisor → Billing team → OSS credit note. Steps:\n1. Review the ticket history and customer sentiment.\n2. Calculate the credit amount based on impact duration.\n3. Apply the credit in BSS and inform customer: \"يا فندم، وافقنا على credit قدره X جنيه على الفاتورة الجاية.\"\n\nAudit Note: كل credit يتسجل للـ review الشهري.\n\nLast Updated: March 2026 | Department: Customer Experience",
+    "source": "issuing_goodwill_credit.md (Supervisor-only).md"
+  },
+  {
+    "text": "How to Use the KPI Dashboard\n\nدليل استخدام لوحة المؤشرات\n\nيا فندم، كل يوم لازم تشيك الـ KPI dashboard عشان تعرف أدائك.\n\nالمؤشرات المهمة:\n- AHT (Average Handle Time): هدف أقل من 4 دقايق لكل مكالمة\n- FCR (First Call Resolution): لازم يكون أعلى من 75%\n- CSAT (Customer Satisfaction): هدف أعلى من 85%\n- Ticket Volume per agent\n\nلو الـ CSAT بتاعك انخفض تحت 80%، الـ supervisor هيعمل review معاك.\nلو الـ FCR منخفض، راجع الـ knowledge base أكتر واستخدم الـ RAG assistant.\n\nLast Updated: April 2026 | Quality Assurance",
+    "source": "kpi_dashboard_guide.md"
+  },
+  {
+    "text": "Mansoura & Delta Region Fiber Common Issues\n\nمشاكل الـ FTTH الشائعة في المنصورة والدلتا\n\nيا فندم، المناطق دي بتشهد شكاوى أكتر بسبب كثافة السكان والـ infrastructure القديم في بعض الأحياء.\n\nالمشاكل المتكررة:\n- Frequent fiber cuts بسبب أعمال الحفر في الشوارع.\n- High congestion على الـ OLT ports في peak hours.\n- Water damage للـ cables بعد الأمطار.\n- Wrong splitter allocation في المباني الكبيرة.",
+    "source": "mansoura_delta_fiber_issues.md"
+  },
+  {
+    "text": "r damage للـ cables بعد الأمطار.\n- Wrong splitter allocation في المباني الكبيرة. Troubleshooting Steps:\n1. Check OSS for recent work orders in the area.\n2. Ask customer for exact symptom timing (morning / evening / after rain).\n3. If multiple complaints from same building → create bulk ticket and dispatch team.\n\nنصيحة: \"يا فندم، في المنصورة والدلتا فيه شغل كتير دلوقتي، بس هنتابع مع الـ field team ونبعتلك update يومي.\"\n\nLast Updated: April 2026 | Department: Regional Network Operations",
+    "source": "mansoura_delta_fiber_issues.md"
+  },
+  {
+    "text": "Network Outage Communication Templates\n\nقوالب الرد على انقطاع الشبكة\n\nيا فندم، لما يحصل network outage، لازم نرد على العملاء بنفس الطريقة المهنية والواضحة.\n\nTemplate 1 – Phone / Chat:\n\"عزيزي العميل، بنعتذر جداً عن انقطاع الخدمة في منطقتك. الفريق الفني شغال دلوقتي على حل المشكلة. Expected resolution time: ساعتين بالكتير. هنبعتلك إشعار فور ما ترجع الخدمة. شكراً لصبرك يا فندم.\"\n\nTemplate 2 – SMS / App Notification:\n\"نعتذر عن انقطاع الـ FTTH في منطقتك. Expected fix: 2 ساعات. NileTel\"",
+    "source": "network_outage_template.md"
+  },
+  {
+    "text": "tification:\n\"نعتذر عن انقطاع الـ FTTH في منطقتك. Expected fix: 2 ساعات. NileTel\" Template 3 – VIP Customers:\n\"يا فندم، عارف إنك VIP ومهم جداً بالنسبة لنا. الـ outage هيتم حله خلال ساعة واحدة إن شاء الله، ولو حصل أي تأخير هنقدم compensation حسب الـ SLA.\"\n\nبعد ما ترجع الخدمة:\n- أرسل follow-up message: \"الخدمة رجعت يا فندم، لو لسه في مشكلة ابعتلنا فوراً.\"\n\nLast Updated: March 2026 | Department: NOC",
+    "source": "network_outage_template.md"
+  },
+  {
+    "text": "NileTel Mobile App Troubleshooting Guide\n\nدليل حل مشاكل تطبيق NileTel\n\nيا فندم، كتير من العملاء بيشتكوا من مشاكل في الـ NileTel App (فاتورة، recharge، speed test، ticket creation).\n\nالمشاكل الشائعة وحلولها:\n- App not loading: Clear cache + update to latest version from Google Play / App Store.\n- Can't see current usage: Check internet connection أو force logout and login again.\n- Speed test not working: Run the test while connected directly to the ONT (مش WiFi).\n- Can't create ticket from app: Verify that the account is linked correctly in BSS.",
+    "source": "nile_tel_mobile_app_troubleshooting.md"
+  },
+  {
+    "text": "an't create ticket from app: Verify that the account is linked correctly in BSS. إجراءات الـ agent:\n1. اسأل العميل: \"إيه الإصدار بتاع الـ app عندك؟\"\n2. لو المشكلة في الـ app بس، guide him to reinstall.\n3. لو المشكلة مرتبطة بالخدمة، ارفع ticket P2 مع screenshot من الـ app.\n\nنصيحة: قول \"يا فندم، الـ app بيساعدنا نحل المشاكل أسرع، لو عايز نفتحه مع بعض دلوقتي.\"\n\nLast Updated: March 2026 | Department: Digital Channels",
+    "source": "nile_tel_mobile_app_troubleshooting.md"
+  },
+  {
+    "text": "NTRA Key Regulations Summary 2026\n\nملخص اللوائح التنظيمية من الجهاز القومي لتنظيم الاتصالات (NTRA)\n\nيا فندم، كل الـ agents لازم يعرفوا القواعد دي عشان نتجنب أي غرامات أو complaints رسمية.\n\nأهم النقاط:\n- الحد الأقصى لانقطاع الخدمة في الشهر: 8 ساعات. لو زاد لازم نعمل compensation للعملاء المتضررين.\n- كل العروض التسويقية لازم تكون واضحة بدون hidden fees أو fine print.\n- Response time لشكاوى العملاء يجب ألا يتجاوز 15 دقيقة للـ VIP و30 دقيقة للعملاء العاديين.\n- أي data breach أو مشاركة بيانات بدون consent يعتبر violation خطير.",
+    "source": "ntra_regulations_summary.md"
+  },
+  {
+    "text": "ء العاديين.\n- أي data breach أو مشاركة بيانات بدون consent يعتبر violation خطير. لو العميل ذكر \"هشتكي للـ NTRA\":\n- ارفع التذكرة كـ P1 فوراً\n- أبلغ الـ supervisor\n- دوّن كل الكلام اللي قاله العميل بالتفصيل\n\nنصيحة: دايماً قول \"يا فندم، إحنا ملتزمين بكل لوائح الـ NTRA وهنحل مشكلتك في أسرع وقت\".\n\nLast Updated: March 2026 | Department: Legal & Compliance",
+    "source": "ntra_regulations_summary.md"
+  },
+  {
+    "text": "Peak Hour Network Management\n\nإدارة ساعات الذروة\n\nيا فندم، من 7 مساءً لحد 11 مساءً بيكون في peak hour congestion كبير، خاصة في المنصورة ومناطق الدلتا.\n\nالإجراءات اللي بنعملها:\n- Soft throttling على الـ heavy users اللي بيستهلكوا أكتر من 80% من الـ monthly quota\n- Real-time monitoring للـ cell congestion عبر الـ OSS system\n- إرسال automated messages للعملاء: \"المنطقة مزدحمة دلوقتي، جرب تاني بعد ساعة\"\n\nنصيحة للـ support agents:\nلو العميل شاكي من بطء في الذروة، قوله:\n\"يا فندم، ده normal في peak hours بسبب الاستخدام العالي. السرعة هترجع طبيعي بعد 11 مساءً. لو عايز حل دائم نقدر نراجع باقتك.\"",
+    "source": "peak_hour_management.md"
+  },
+  {
+    "text": "خدام العالي. السرعة هترجع طبيعي بعد 11 مساءً. لو عايز حل دائم نقدر نراجع باقتك.\" تابع الـ KPI dashboard يومياً عشان تشوف مناطق الـ congestion.\n\nLast Updated: April 2026 | Department: NOC",
+    "source": "peak_hour_management.md"
+  },
+  {
+    "text": "Prepaid to Postpaid Migration Process\n\nخطوات التحويل من Prepaid إلى Postpaid\n\nيا فندم، كتير من العملاء بيسألوا عن الـ migration من prepaid لـ postpaid عشان الباقات أوفر وفيها unlimited calls.\n\nالخطوات:\n1. تحقق من أهلية العميل (استخدام منتظم لمدة 6 أشهر على الأقل).\n2. شرح الفرق بين الاتنين: \"في الـ postpaid هتدفع شهرياً وهتحصل على باقات أكبر وسرعة أفضل\".\n3. جمع المستندات: بطاقة رقم قومي + إثبات عنوان.\n4. إنشاء عقد جديد في الـ BSS system.\n5. Port الرقم ونقل الرصيد (حد أقصى 200 جنيه).\n6. تفعيل الباقة الجديدة خلال 24 ساعة.",
+    "source": "prepaid_to_postpaid_migration.md"
+  },
+  {
+    "text": "Port الرقم ونقل الرصيد (حد أقصى 200 جنيه).\n6. تفعيل الباقة الجديدة خلال 24 ساعة. نصيحة للـ agent:\n\"يا فندم، الـ migration هيوفرلك فلوس كتير على المدى الطويل، خاصة لو بتستخدم data كتير. عايز نبدأ الإجراء دلوقتي؟\"\n\nLast Updated: April 2026 | Sales Department",
+    "source": "prepaid_to_postpaid_migration.md"
+  },
+  {
+    "text": "New Postpaid Offers - Ramadan 2026\n\nأحدث عروض الـ Postpaid في رمضان 2026\n\nيا فندم، في رمضان 2026 نزلنا عروض حلوة أوي عشان نجذب عملاء جدد ونحافظ على العملاء الحاليين.\n\nالباقة الرئيسية: Ramadan Unlimited → 500 GB + unlimited local calls بـ 3000 جنيه شهرياً.\nمع كل activation جديدة بنقدم 5G router مجاني + 100 GB إضافي لأول 3 شهور.\n\nشروط التأهل: لازم يكون عنده good payment history وما يكونش في outstanding balance أكتر من 30 يوم.\nالعملاء الـ prepaid يقدروا يعملوا migration مع balance transfer بحد أقصى 200 جنيه.",
+    "source": "ramadan_postpaid_offers_2026.md"
+  },
+  {
+    "text": "عملاء الـ prepaid يقدروا يعملوا migration مع balance transfer بحد أقصى 200 جنيه. الكلام اللي تقوله للعميل:\n\"يا فندم، العرض ده هيوفرلك فلوس كتير على المدى الطويل، وهيجي معاه راوتر 5G مجاني. عايز نفعله دلوقتي ولا نعملك مقارنة بين الـ prepaid والـ postpaid؟\"\n\nالعرض هينتهي مع نهاية عيد الفطر. لازم نتابع الـ uptake في الـ KPI dashboard.\n\nLast Updated: March 2026 | Marketing & Sales Department",
+    "source": "ramadan_postpaid_offers_2026.md"
+  },
+  {
+    "text": "Roaming Charges Explanation Guide\n\nشرح رسوم الـ Roaming\n\nيا فندم، رسوم الـ roaming غالية أوي لو العميل سافر بدون ما يعمل activate للـ daily pass.\n\nالنصائح اللي تقولها:\n- لو رايح السعودية أو الإمارات، في daily pass رخيص يشمل data ومكالمات.\n- نصح العميل يستخدم WiFi أو يشتري eSIM محلي في الدولة اللي مسافر لها.\n- قبل السفر يشيك على roaming partners من الـ CRM portal.\n\nالشكاوى الشائعة:\nكتير بيحصل بعد رجوع العميل من رمضان أو الإجازات لأنهم نسوا يطفوا الـ data roaming.",
+    "source": "roaming_charges_guide.md"
+  },
+  {
+    "text": "ير بيحصل بعد رجوع العميل من رمضان أو الإجازات لأنهم نسوا يطفوا الـ data roaming. لو العميل شاكي من رسوم عالية:\n- افتح الـ usage logs في الـ BSS.\n- لو في خطأ، اعمل credit note.\n- لو مش خطأ، شرح له الـ charges بالتفصيل.\n\nLast Updated: February 2026 | Customer Support",
+    "source": "roaming_charges_guide.md"
+  },
+  {
+    "text": "SLA for VIP & Golden Customers\n\nاتفاقية مستوى الخدمة (SLA) للعملاء الـ VIP و Golden\n\nيا فندم، العملاء الـ VIP (ARPU أعلى من 500 جنيه أو مدة اشتراك أكتر من 3 سنين) ليهم معاملة خاصة خالص.\n\nالـ Response time لازم يكون 15 دقيقة كحد أقصى على التليفون.\nالـ Resolution time: 4 ساعات لأي network issue و 24 ساعة لمشاكل الفواتير.\nلو حصل breach في الـ SLA، العميل ياخد compensation تلقائي 50% discount على الفاتورة الجاية.\n\nكل تذاكر الـ VIP لازم تترفع كـ P1 في الـ CRM والـ ticketing system، والـ supervisor يراجعها يومياً.\nالهدف بتاعنا: VIP CSAT أعلى من 95% و FCR أعلى من 85%.",
+    "source": "sla_vip_golden_customers.md"
+  },
+  {
+    "text": "supervisor يراجعها يومياً.\nالهدف بتاعنا: VIP CSAT أعلى من 95% و FCR أعلى من 85%. لو العميل قال \"هشتكي للـ NTRA\" أو ذكر أي تهديد قانوني → escalate فوراً للـ Retention team.\n\nنصيحة للـ agent: استخدم كلام لطيف زي \"يا فندم، أنا آسف جداً على المشكلة دي، وهنحلها في أسرع وقت ونبلغك بالـ compensation لو لزم الأمر\".\n\nLast Updated: February 2026 | Department: Customer Experience",
+    "source": "sla_vip_golden_customers.md"
+  },
+  {
+    "text": "Supervisor Daily Review Checklist\n\nقائمة مراجعة يومية للـ supervisors\n\nيا فندم، كل supervisor لازم يعمل الـ checklist دي يومياً:\n\n- Review all P1 & VIP tickets.\n- Check open tickets older than 4 hours.\n- Verify goodwill credits issued.\n- Monitor team AHT, FCR, and CSAT.\n- Escalate recurring issues (e.g., same area fiber cuts) to NOC.\n\nنصيحة: استخدم الـ RAG assistant عشان تساعد الـ team في الإجابات السريعة.\n\nLast Updated: April 2026 | Management",
+    "source": "supervisor_daily_review_checklist.md"
+  },
+  {
+    "text": "Supported Routers & ONTs List\n\nقائمة الأجهزة المدعومة في NileTel\n\nيا فندم، مهم جداً نستخدم أجهزة مدعومة عشان نتجنب مشاكل الـ disconnections والـ slow speed.\n\nالأجهزة الموصى بها:\n- Huawei HG8145V5 → أفضل choice للـ FTTH، يدعم WiFi 6 وسرعات عالية\n- Nokia G-2425G-A → جيد للمناطق اللي فيها signal متوسط\n- TP-Link Archer AX series (WiFi 6) → مناسب للعملاء اللي عايزين coverage أوسع\n\nالأجهزة غير المدعومة:\n- أي ONT قديم من شركات تانية أو routers قديمة (مثل TP-Link Archer C20)\n- هتسبب frequent disconnections ومشاكل في الـ provisioning",
+    "source": "supported_hardware.md"
+  },
+  {
+    "text": "ل TP-Link Archer C20)\n- هتسبب frequent disconnections ومشاكل في الـ provisioning نصيحة للـ agents:\nلو العميل بيستخدم جهاز غير مدعوم، قوله \"يا فندم، الجهاز ده مش مدعوم من NileTel، لو ركبنا الـ Huawei HG8145V5 هتحسن السرعة والاستقرار كتير. عايز نعمل replace؟\"\n\nبعد أي installation، لازم نكتب في التذكرة نوع الـ ONT والـ router المستخدم.\n\nLast Updated: April 2026 | Department: Network Engineering",
+    "source": "supported_hardware.md"
+  },
+  {
+    "text": "Internal Telecom Glossary - NileTel\n\nمصطلحات فنية شائعة في NileTel\n\nيا فندم، لازم كل الـ agents يستخدموا المصطلحات دي بنفس الطريقة عشان التواصل يكون واضح مع الـ team والعملاء.",
+    "source": "telecom_glossary.md"
+  },
+  {
+    "text": "يستخدموا المصطلحات دي بنفس الطريقة عشان التواصل يكون واضح مع الـ team والعملاء. - FTTH: Fiber To The Home – تفعيل الفايبر للمنازل\n- ONT: Optical Network Terminal – الجهاز اللي بيتركب عند العميل\n- OLT: Optical Line Terminal – الجهاز الرئيسي في الـ central office\n- Throttling: تقليل السرعة بعد تجاوز الـ monthly quota\n- Provisioning: عملية تجهيز وتفعيل الخدمة في الـ BSS\n- OSS: Operational Support System – النظام اللي بيراقب الشبكة\n- BSS: Business Support System – النظام بتاع الفواتير والعقود\n- ARPU: Average Revenue Per User – متوسط الإيراد لكل عميل\n- Churn: معدل انسحاب العملاء\n- SLA: Service Level Agreement – اتفاقية مستوى الخدمة",
+    "source": "telecom_glossary.md"
+  },
+  {
+    "text": "Churn: معدل انسحاب العملاء\n- SLA: Service Level Agreement – اتفاقية مستوى الخدمة - FCR: First Call Resolution – حل المشكلة من أول مكالمة\n- CSAT: Customer Satisfaction Score\n- KPI: Key Performance Indicators (زي AHT و FCR و CSAT)\n- P1 Ticket: أعلى أولوية (critical issues زي outage أو VIP complaints)",
+    "source": "telecom_glossary.md"
+  },
+  {
+    "text": "R و CSAT)\n- P1 Ticket: أعلى أولوية (critical issues زي outage أو VIP complaints) نصيحة: استخدم المصطلحات الإنجليزية زي ما هي في كل التذاكر، بس شرحها للعميل بالعربي المصري عشان يفهم.\n\nLast Updated: April 2026 | Department: Training & Quality",
+    "source": "telecom_glossary.md"
+  },
+  {
+    "text": "Ticket Categories & Sub-categories\n\nفئات التذاكر في NileTel\n\nيا فندم، اختيار الـ category الصحيح مهم جداً عشان التذكرة تروح للـ team المناسب بسرعة.\n\nالفئات الرئيسية:\n- Network Issue → 5G Slow Speed / 4G Drop / FTTH Outage / ADSL Problem\n- Billing → Overcharge / Refund Request / Double Billing / Roaming Charges\n- Service Request → New Line Activation / Upgrade Package / Cancellation / Prepaid to Postpaid Migration\n- Technical → Device Not Connecting / App Error / Account Lock / ONT Issue\n- VIP / Retention → Special handling for high-value customers",
+    "source": "ticket_categories_list.md"
+  },
+  {
+    "text": "t Lock / ONT Issue\n- VIP / Retention → Special handling for high-value customers نصيحة: لو المشكلة فيها أكتر من فئة، اختار الأهم ودوّن التفاصيل في الـ description.\n\nLast Updated: March 2026 | Operations",
+    "source": "ticket_categories_list.md"
+  },
+  {
+    "text": "Ticket Priority Guidelines\n\nإرشادات أولوية التذاكر (P1 إلى P4)\n\nيا فندم، اختيار الـ Priority صح مهم عشان التذكرة تتحرك بسرعة للفريق المناسب.\n\n- P1 (Critical):\n - Complete network outage\n - VIP or Golden customer complaints\n - Security or data breach issues\n - SLA breach risk\n\n- P2 (High):\n - Intermittent service or slow speed affecting multiple users\n - 5G/FTTH throttling that cannot be resolved remotely\n\n- P3 (Medium):\n - Billing disputes\n - General service inquiries\n - Non-urgent technical issues\n\n- P4 (Low):\n - Feature requests\n - Information only questions",
+    "source": "ticket_priority_guidelines.md"
+  },
+  {
+    "text": "technical issues\n\n- P4 (Low):\n - Feature requests\n - Information only questions نصيحة: لو في شك، ارفعها P2 أحسن من P3. \nدايماً أضف reason للـ priority في description التذكرة.\n\nLast Updated: February 2026 | Operations Department",
+    "source": "ticket_priority_guidelines.md"
+  },
+  {
+    "text": "VIP Retention Talking Points\n\nنقاط الاحتفاظ بالعملاء الـ VIP\n\nيا فندم، لما العميل VIP يبقى زعلان أو يفكر يلغي الخدمة، استخدم النقاط دي:\n\n1. ابدأ بتعاطف: \"يا فندم، أنا آسف جداً إنك واجهت المشكلة دي، أنت عميل مهم جداً بالنسبة لنا.\"\n2. عرض خاص: \"بناءً على تاريخك، نقدر نقدملك extra 100 GB + خصم 20% على الفاتورة الجاية.\"\n3. سؤال مغلق: \"عايز نفعل العرض ده دلوقتي ولا نعملك عرض أفضل؟\"\n4. لو لسه مش مقتنع: \"هصعد الموضوع للـ Retention team عشان يقدمولك حل خاص.\"\n\nالهدف: تقليل الـ churn للـ VIP customers لأقل من 2% شهرياً.\n\nLast Updated: March 2026 | Retention Department",
+    "source": "vip_retention_script.md"
+  }
+]
