@@ -42,7 +42,7 @@
 
 ## 🎬 Demo
 
-> **▶ [Watch full demo video](C:\Users\WellCome\Desktop\NileTel RAG Assistant\artifacts\Demo.mp4)**  
+> **▶ [Watch full demo video](artifacts\Demo.mp4)**  
 > *(Shows greeting routing, knowledge-base Q&A and automatic ticket escalation flow)*
 
 ---
