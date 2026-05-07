@@ -25,7 +25,7 @@
 <tr>
 <td align="center" width="33%">
 <img src="artifacts/FastAPI_Swagger_UI.png" alt="Swagger API Docs" width="100%"/>
-<br/><sub><b>FastAPI Swagger UI — /query endpoint live test</b></sub>
+<br/><sub><b>FastAPI Swagger UI /query endpoint live test</b></sub>
 </td>
 <td align="center" width="33%">
 <img src="artifacts/API_Response.png" alt="API Response" width="100%"/>
