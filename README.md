@@ -126,17 +126,17 @@ When a customer's issue requires human intervention (full outage, router failure
                     └───────┬───────┘
                             │
               ┌─────────────▼───────────────┐
-              │         FastAPI /query       │
-              │   { route, answer, sources,  │
-              │     needs_action, latency }  │
+              │         FastAPI /query      │
+              │   { route, answer, sources, │
+              │     needs_action, latency } │
               └─────────────┬───────────────┘
                             │
               ┌─────────────▼───────────────┐
-              │     Streamlit Chat UI        │
-              │  ↳ if needs_action == YES:   │
-              │    Show ticket form          │
-              │    POST /ticket → n8n        │
-              └──────────────────────────────┘
+              │     Streamlit Chat UI       │
+              │  ↳ if needs_action == YES:  │
+              │    Show ticket form         │
+              │    POST /ticket → n8n       │
+              └─────────────────────────────┘
 ```
 
 ---
